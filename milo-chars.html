@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Characters of Milo</title>
+    <link rel='stylesheet' type='text/css' href='css/main.css'>
+    <link rel='stylesheet' type='text/css' href='css/epicofmilo.css'>
+    <!-- <link rel='stylesheet' type='text/css' href='css/characters.css'> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito|Pangolin|Montserrat">
+
+    <style>
+        body {
+            font-family: Pangolin, sans-serif;
+        }
+
+        a {
+            position: relative;
+        }
+
+        .galleryImg,
+        .galleryHover {
+            height: 300px;
+            transform: translateX(-50%);
+            margin-left: 50%;
+        }
+
+        .galleryHover {
+            position: absolute;
+
+            top: 10px;
+            left: 0px;
+            opacity: 0;
+        }
+
+        a:hover .galleryHover {
+            opacity: 1;
+            z-index: 98;
+        }
+
+        .galleryImg {
+            opacity: 1;
+        }
+
+        a:hover .galleryImg {
+            opacity: 0;
+        }
+
+        a:hover h2 {
+            color: rgba(243, 192, 20, 1.00);
+        }
+
+        #nico {
+            z-index: 99;
+        }
+
+        #nicoHover {
+            z-index: 100;
+        }
+
+        .galleryItem {
+            padding: 10px;
+            width: 320px;
+        }
+
+        .gallery {
+            width: 80%;
+            margin: auto;
+            justify-content: center;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="images/header-wide.png" style="margin: auto;">
+    <nav class="mainNav">
+        <a href="epic-of-milo.html">HOME</a>
+        <a href="milo-pages.html">CHAPTERS</a>
+        <a href="milo-chars.html">CHARACTERS</a>
+    </nav>
+    <main>
+        <h1>Characters</h1>
+
+        <div class="gallery">
+            <a href="characters/milo.html" class="galleryItem" id="milo">
+                <img class="galleryHover" src="images/milo-hover.png">
+                <img class="galleryImg" src="images/milo-idle.png">
+                <h2>Milo</h2>
+            </a>
+            <a href="characters/nico.html" class="galleryItem" id="nico">
+                <img class="galleryHover" src="images/nico-hover.png" id="nicoHover">
+                <img class="galleryImg" src="images/nico-idle.png">
+                <h2>Nico</h2>
+            </a>
+            <a href="characters/gus.html" class="galleryItem" id="gus">
+                <img class="galleryHover" src="images/gus-hover.png">
+                <img class="galleryImg" src="images/gus-idle.png">
+                <h2>Gus</h2>
+            </a>
+            <!-- <a href="characters/pumice.html" class="galleryItem" id="pumice">
+                <img class="galleryHover" src="images/pumice-hover.gif">
+                <img class="galleryImg" src="images/pumice-idle.gif">
+                <h2>Pete and Pint Pumice</h2>
+            </a>
+            <a href="characters/miranda.html" class="galleryItem" id="miranda">
+                <img class="galleryHover" src="images/miranda-hover.gif">
+                <img class="galleryImg" src="images/miranda-idle.gif">
+                <h2>Princess Miranda</h2>
+            </a>
+            <a href="characters/rivals.html" class="galleryItem" id="rivals">
+                <img class="galleryHover" src="images/rivals-hover.gif">
+                <img class="galleryImg" src="images/rivals-idle.gif">
+                <h2>Tinhead, Percival, and Grough</h2>
+            </a> -->
+        </div>
+
+        <h2>More characters will be added later as they are introduced into the story!</h2>
+
+        <!-- <div class="imageAndDesc">
+            <img src="images/milo-pose-sticker.jpg" width="300px" height="300px">
+            <div>
+                <h2>Milo</h2>
+                <p>Milo is our plucky prodigious protagonist. He’s on a quest to buy a dog, and teams up with Nico in
+                    order to amass the necessary gold. Milo is innocent, optimistic, brutally honest, and strong-willed.
+                </p>
+            </div>
+        </div>
+
+        <div class="imageAndDesc">
+            <img src="images/nico-icon.jpg" width="300px" height="300px">
+            <div>
+                <h2>Nico</h2>
+                <p>Nico is our debonair, devious deuteragonist. Though he wants to become the greatest hero in the land,
+                    he pursues this goal only for the material gain he’ll achieve from it. This aspect of himself
+                    changes as the story progresses, especially after he meets Princess Miranda. Nico possesses a
+                    dangerous combination of confidence and shortsightedness, which often lands him in hot water. Nico
+                    gives Milo very solid advice about what it means to be a hero, but he tends to twist it for his own
+                    profit when he applies it to his own life.
+                </p>
+            </div>
+        </div>
+ -->
+    </main>
+</body>
+<footer>
+    <div>
+        <a href="index.html">&copy; Kenneth Lones, 2023</a>
+    </div>
+</footer>
+
+</html>

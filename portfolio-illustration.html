@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery.min.css">
+    <link rel='stylesheet' type='text/css' href='css/main.css'>
+
+    <style>
+        /* .myGallery {
+            margin: auto;
+            max-width: 900px;
+            justify-content: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-areas:
+                "l1 l1 m1 m1 r1 r1"
+                "m2 m2 m2 m2 m2 m2"
+                "l3 l3 m3 m3 r3 r3"
+                "l4 l4 m4 r4 r4 r4"
+                "l5 l5 m5 m5 r5 r5"
+                "l6 l6 m6 m6 r6 r6";
+        } */
+
+        /* #itemL1 {
+            grid-area: l1;
+        }
+
+        #itemM1 {
+            grid-area: m1;
+        }
+
+        #itemR1 {
+            grid-area: r1;
+        }
+
+        #itemM2 {
+            grid-area: m2;
+        }
+
+        #itemM2 img {
+            width: 900px;
+        }
+
+        #itemL3 {
+            grid-area: l3;
+        }
+
+        #itemM3 {
+            grid-area: m3;
+        }
+
+        #itemR3 {
+            grid-area: r3;
+        }
+
+        #itemL4 {
+            grid-area: l4;
+        }
+
+        #itemR4 {
+            grid-area: r4;
+        }
+
+        #itemL4 img {
+            width: 450px;
+        }
+
+        #itemR4 img {
+            width: 450px;
+        }
+
+        #itemL5 {
+            grid-area: l5;
+        }
+
+        #itemM5 {
+            grid-area: m5;
+        }
+
+        #itemR5 {
+            grid-area: r5;
+        }
+
+        #itemL6 {
+            grid-area: l6;
+        }
+
+        #itemM6 {
+            grid-area: m6;
+        }
+
+        #itemR6 {
+            grid-area: r6;
+        }
+
+        @media only screen and (max-width: 700px) {
+            .myGallery {
+                grid-template: auto / auto;
+                grid-template-areas:
+                    "l1"
+                    "m1"
+                    "r1"
+                    "m2"
+                    "l3"
+                    "m3"
+                    "r3"
+                    "l4"
+                    "r4"
+                    "l5"
+                    "m5"
+                    "r5"
+                    "l6"
+                    "m6"
+                    "r6";
+            }
+
+            .item img {
+                width: 300px;
+            }
+
+            #itemM2 img,
+            #itemM2 {
+                height: 100px;
+                width: 300px;
+            }
+
+            #itemL4,
+            #itemR4,
+            #itemL4 img,
+            #itemR4 img {
+                height: 200px;
+                width: 300px;
+            }
+        } */
+
+        .myGallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            flex-direction: row;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .item {
+            width: 33.33%;
+            max-height: 300px;
+        }
+
+        .item img {
+            width: 100%;
+            max-height: 300px;
+        }
+
+        .imageRow {
+            display: flex;
+            justify-content: center;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            width: 100%;
+        }
+
+        .imageColumn {
+            display: flex;
+            justify-content: center;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .imageRow img {
+            width: 100%;
+        }
+
+        img {
+            border-radius: 20px;
+            padding: 5px;
+        }
+
+        h1,
+        p {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="centerWrapper">
+        <header>
+            KENNETH LONES
+        </header>
+
+        <nav class="mainNav">
+            <a href="index.html">HOME</a>
+            <!-- <a href="epic-of-milo.html">EPIC OF MILO</a> -->
+            <a href="portfolio-best-work.html">PORTFOLIO</a>
+            <a href="commissions.html">SHOP</a>
+        </nav>
+        <main>
+
+            <h1>Portfolio</h1>
+
+            <nav>
+                <a href="portfolio-best-work.html">Best Of</a>
+                <a href="portfolio-illustration.html" style="color: rgb(189, 0, 32);">Illustration</a>
+                <a href="portfolio-animation.html">Animation</a>
+                <a href="portfolio-modeling.html">Modeling</a>
+            </nav>
+
+            <p>Here's an assortment of art I've made this year!</p>
+
+            <div class="myGallery">
+                <a href="images/banner.jpg" class="item" style="width: 100%;">
+                    <img src="images/banner.jpg" alt="" />
+                </a>
+
+                <a href="images/milo-pose-sticker.jpg" class="item">
+                    <img src="images/milo-pose-sticker.jpg" alt="" />
+                </a>
+                <a href="images/nico-icon.jpg" class="item">
+                    <img src="images/nico-icon.jpg" alt="" />
+                </a>
+                <a href="images/battle gus.jpg" class="item">
+                    <img src="images/battle gus.jpg" alt="" />
+                </a>
+                <a href="images/gravity-falls-web.jpg" class="item" style="width: 100%;">
+                    <img src="images/gravity-falls-web.jpg" alt="" />
+                </a>
+                <a href="images/edmond-bumble.jpg" class="item">
+                    <img src="images/edmond-bumble.jpg" alt="" />
+                </a>
+                <a href="images/solaire.jpg" class="item">
+                    <img src="images/solaire.jpg" alt="" />
+                </a>
+                <a href="images/basilisk-bg.jpg" class="item">
+                    <img src="images/basilisk-bg.jpg" alt="" />
+                </a>
+                <a href="images/frog-wizard.jpg" class="item" style="width: 50%;">
+                    <img src="images/frog-wizard.jpg" alt="" />
+                </a>
+                <a href="images/earthbound.jpg" class="item" style="width: 50%;">
+                    <img src="images/earthbound.jpg" alt="" />
+                </a>
+                <a href="images/power.jpg" class="item">
+                    <img src="images/power.jpg" alt="" />
+                </a>
+                <a href="images/elric-brothers.jpg" class="item">
+                    <img src="images/elric-brothers.jpg" alt="" />
+                </a>
+                <a href="images/jajanken.jpg" class="item">
+                    <img src="images/jajanken.jpg" alt="" />
+                </a>
+                <a href="images/sunflowers.jpg" class="item">
+                    <img src="images/sunflowers.jpg" alt="" />
+                </a>
+                <a href="images/peppino.jpg" class="item">
+                    <img src="images/peppino.jpg" alt="" />
+                </a>
+                <a href="images/merlin.jpg" class="item">
+                    <img src="images/merlin.jpg" alt="" />
+                </a>
+            </div>
+
+        </main>
+
+        <footer>
+            <div>&copy; Kenneth Lones, 2023</div>
+        </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js"></script>
+
+        <script>
+            lightGallery(document.querySelector('.myGallery'));
+        </script>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel='stylesheet' type='text/css' href='css/main.css'>
+    <link rel='stylesheet' type='text/css' href='css/epicofmilo.css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito|Pangolin|Montserrat">
+    <title>Milo Chapter 1</title>
+
+    <style>
+        body {
+            font-family: Pangolin, sans-serif;
+        }
+
+        .swiper {
+            width: 78%;
+            height: 100%;
+            background-color: rgb(206, 155, 183);
+            margin-left: auto;
+            margin-right: auto;
+            border-style: solid;
+            border-width: 10px;
+            border-color: rgba(104, 86, 76, 1.00);
+            border-radius: 30px;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            --swiper-navigation-color: rgb(98, 57, 141);
+            --swiper-navigation-size: 33px;
+        }
+
+        .swiper-scrollbar {
+            --swiper-scrollbar-bg-color: rgba(98, 57, 141, 0.1);
+            --swiper-scrollbar-drag-bg-color: rgba(98, 57, 141, 0.5);
+        }
+
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>EPIC of MILO</header>
+    <nav class="mainNav">
+        <a href="epic-of-milo.html">HOME</a>
+        <a href="milo-pages.html">CHAPTERS</a>
+        <a href="milo-chars.html">CHARACTERS</a>
+    </nav>
+
+    <main>
+
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <h3>Chapter 1: Pie</h3>
+                </div>
+                <div class="swiper-slide">
+                    <img src="pages/pie_003.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="pages/pie_004.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="pages/pie_005.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="pages/pie_006.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="pages/pie_007.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="pages/pie_008.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="pages/pie_009.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="pages/pie_010.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="pages/pie_011.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="pages/pie_012.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="pages/pie_013.png">
+                </div>
+                <div class="swiper-slide">
+                    <h3>More pages coming soon!</h3>
+                </div>
+            </div>
+
+            <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
+
+            <div class="swiper-pagination"></div>
+            <div class="swiper-scrollbar"></div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div>&copy; Kenneth Lones, 2023</div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: false,
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+            spaceBetween: 0,
+            speed: 500,
+
+            // If we need pagination
+            /* pagination: {
+                el: '.swiper-pagination',
+                type: fractions,
+            }, */
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+                draggable: true,
+            },
+
+            keyboard: {
+                enabled: true,
+            }
+        });
+    </script>
+</body>
+
+</html>

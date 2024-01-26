@@ -1,0 +1,36 @@
+.galleryImg,
+.galleryHover {
+    height: 300px;
+    transform: translateX(-50%);
+    margin-left: 50%;
+}
+
+.mainBar {
+    text-align: left;
+}
+
+.mainBar h1,
+.mainBar h2 {
+    text-align: left;
+}
+
+.galleryHover {
+    position: absolute;
+
+    top: 10px;
+    opacity: 0;
+}
+
+a:hover .galleryHover {
+    opacity: 1;
+    z-index: 98;
+}
+
+a:hover h2 {
+    color: rgba(243, 192, 20, 1.00);
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto 300px;
+}

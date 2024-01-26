@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Commission</title>
+    <link rel='stylesheet' type='text/css' href='css/main.css'>
+
+    <style>
+        main {
+            position: absolute;
+            top: 160px;
+            bottom: 100px;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        @media only screen and (max-width: 700px) {
+            main {
+                top: 220px;
+            }
+        }
+
+        body {
+            text-align: left;
+        }
+
+        footer {
+            position: absolute;
+        }
+
+        input[type=text],
+        select {
+            width: 50%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 2px solid rgba(104, 86, 76, 0.8);
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            width: 50%;
+            background-color: darkred;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: rgb(189, 0, 32);
+        }
+    </style>
+</head>
+
+<body>
+    <header>Kenneth Lones</header>
+
+    <nav class="mainNav">
+        <a href="index.html">HOME</a>
+        <a href="about-me.html">ABOUT ME</a>
+        <a href="404.html">COMICS</a>
+        <a href="portfolio.html">PORTFOLIO</a>
+        <a href="books.html">SHOP</a>
+        <a href="commissions.html">COMMISSIONS</a>
+    </nav>
+
+    <main>
+        <div>
+            <h1>
+                Order Your Commission Here!
+            </h1>
+
+            <form>
+                <label>Name:</label>
+                <input type="text" placeholder="Your name.."><br><br>
+                <label>Email:</label>
+                <input type="text" placeholder="Your email.."><br><br>
+                <label>Description:</label>
+                <input type="text" placeholder="Write a short description of what you want.."><br><br>
+                <input type="submit">
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div>&copy; Kenneth Lones, 2023</div>
+    </footer>
+
+</body>
+
+</html>

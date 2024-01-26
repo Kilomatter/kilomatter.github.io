@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery.min.css">
+    <link rel='stylesheet' type='text/css' href='css/main.css'>
+    <style>
+        .myGallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            flex-direction: row;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .item {
+            width: 33.33%;
+            max-height: 300px;
+        }
+
+        .item img {
+            width: 100%;
+            height: 100%;
+        }
+
+        img {
+            border-radius: 20px;
+            padding: 5px;
+        }
+
+        h1,
+        p {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="centerWrapper">
+        <header>
+            KENNETH LONES
+        </header>
+
+        <nav class="mainNav">
+            <a href="index.html">HOME</a>
+            <!-- <a href="epic-of-milo.html">EPIC OF MILO</a> -->
+            <a href="portfolio-best-work.html">PORTFOLIO</a>
+            <a href="commissions.html">SHOP</a>
+        </nav>
+
+        <main>
+
+            <h1>Portfolio</h1>
+
+            <nav>
+                <a href="portfolio-best-work.html" style="color: rgb(189, 0, 32);">Best Of</a>
+                <a href="portfolio-illustration.html">Illustration</a>
+                <a href="portfolio-animation.html">Animation</a>
+                <a href="portfolio-modeling.html">Modeling</a>
+            </nav>
+
+            <p>Here's an assortment of my best work across all the mediums.</p>
+
+            <!-- <div class="imageColumn">
+            <div class="imageRow">
+                <img src="images/milo-pose-sticker.jpg">
+                <img src="images/nico-icon.jpg">
+                <img src="images/battle gus.jpg">
+            </div>
+            <div class="imageRow">
+                <img src="images/gravity-falls-web.jpg" style="flex-grow: 3;">
+            </div>
+            <div class="imageRow">
+                <img src="images/basilisk-bg.jpg">
+                <img src="images/solaire.jpg">
+                <img src="images/edmond-bumble.jpg">
+            </div>
+            <div class="imageRow">
+                <img src="images/frog-wizard.jpg" style="flex-grow: 1.5;">
+                <img src="images/earthbound.jpg" style="flex-grow: 1.5;">
+            </div>
+            <div class="imageRow">
+                <img src="images/power.jpg">
+                <img src="images/elric-brothers.jpg">
+                <img src="images/jajanken.jpg">
+            </div>
+            <div class="imageRow">
+                <img src="images/sunflowers.jpg">
+                <img src="images/merlin.jpg">
+                <img src="images/peppino.jpg">
+            </div>
+        </div> -->
+
+            <div class="myGallery">
+                <a href="images/banner.jpg" class="item" style="width: 100%;">
+                    <img src="images/banner.jpg" alt="" />
+                </a>
+
+                <a href="images/edmond-bumble.jpg" class="item">
+                    <img src="images/edmond-bumble.jpg" alt="" />
+                </a>
+                <a href="images/basilisk-bg.jpg" class="item">
+                    <img src="images/basilisk-bg.jpg" alt="" />
+                </a>
+                <a href="images/solaire.jpg" class="item">
+                    <img src="images/solaire.jpg" alt="" />
+                </a>
+                <a data-lg-size="1280-720"
+                    data-video='{"source": [{"src":"/images/milo-and-the-dragon_1.mp4", "type":"video/mp4"}], "tracks": [{"src": "{/videos/title.txt", "kind":"captions", "srclang": "en", "label": "English", "default": "true"}], "attributes": {"preload": false, "playsinline": true, "controls": true}}'
+                    data-poster="/images/milo-dragon-thumbnail.jpg" data-sub-html="<h4>Milo and the Dragon</h4>"
+                    class="item" style="width:50%">
+                    <img src="images/milo-dragon-thumbnail.jpg" alt="" />
+                </a>
+                <a data-lg-size="1280-720"
+                    data-video='{"source": [{"src":"/images/The_PRNDL.mp4", "type":"video/mp4"}], "tracks": [{"src": "{/videos/title.txt", "kind":"captions", "srclang": "en", "label": "English", "default": "true"}], "attributes": {"preload": false, "playsinline": true, "controls": true}}'
+                    data-poster="/images/prndl-thumb.jpg" data-sub-html="<h4>The PRNDL</h4>" class="item"
+                    style="width:50%">
+                    <img src="images/prndl-thumb.jpg" alt="" />
+                </a>
+                <a href="images/sunflowers.jpg" class="item">
+                    <img src="images/sunflowers.jpg" alt="" />
+                </a>
+                <a href="images/merlin.jpg" class="item">
+                    <img src="images/merlin.jpg" alt="" />
+                </a>
+                <a href="images/cowboy4-speed-2.gif" class="item">
+                    <img src="images/cowboy4-speed-2.gif" alt="" />
+                </a>
+                <a href="images/gravity-falls-web.jpg" class="item" style="width: 100%;">
+                    <img src="images/gravity-falls-web.jpg" alt="" />
+                </a>
+                <a href="images/frog-wizard.jpg" class="item" style="width: 50%;">
+                    <img src="images/frog-wizard.jpg" alt="" />
+                </a>
+                <a href="images/n64-room.png" class="item" style="width: 50%;">
+                    <img src="images/n64-room.png" alt="" />
+                </a>
+                <a href="images/power.jpg" class="item">
+                    <img src="images/power.jpg" alt="" />
+                </a>
+                <a href="images/elric-brothers.jpg" class="item">
+                    <img src="images/elric-brothers.jpg" alt="" />
+                </a>
+                <a href="images/jajanken.jpg" class="item">
+                    <img src="images/jajanken.jpg" alt="" />
+                </a>
+            </div>
+
+
+        </main>
+
+        <footer>
+            <div>&copy; Kenneth Lones, 2023</div>
+        </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js"></script>
+
+        <script>
+            lightGallery(document.querySelector('.myGallery'));
+        </script>
+    </div>
+</body>
+
+</html>

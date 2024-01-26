@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery.min.css">
+    <link rel='stylesheet' type='text/css' href='css/main.css'>
+
+    <style>
+        .myGallery {
+            margin: auto;
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 900px;
+        }
+
+        .item {
+            width: 450px;
+            height: 250px;
+        }
+
+        .item img {
+            width: 450px;
+            height: 250px;
+        }
+
+        .imageRow {
+            display: flex;
+            justify-content: center;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            width: 100%;
+        }
+
+        .imageColumn {
+            display: flex;
+            justify-content: center;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .imageRow img {
+            width: 100%;
+        }
+
+        img {
+            border-radius: 20px;
+            padding: 5px;
+        }
+
+        h1,
+        p {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="centerWrapper">
+        <header>
+            KENNETH LONES
+        </header>
+
+        <nav class="mainNav">
+            <a href="index.html">HOME</a>
+            <!-- <a href="epic-of-milo.html">EPIC OF MILO</a> -->
+            <a href="portfolio-best-work.html">PORTFOLIO</a>
+            <a href="commissions.html">SHOP</a>
+        </nav>
+
+        <main>
+
+            <h1>Portfolio</h1>
+
+            <nav>
+                <a href="portfolio-best-work.html">Best Of</a>
+                <a href="portfolio-illustration.html">Illustration</a>
+                <a href="portfolio-animation.html" style="color: rgb(189, 0, 32);">Animation</a>
+                <a href="portfolio-modeling.html">Modeling</a>
+            </nav>
+
+            <p>Here's my best animation work!</p>
+
+            <div class="myGallery">
+                <a data-lg-size="1280-720"
+                    data-video='{"source": [{"src":"/images/milo-and-the-dragon_1.mp4", "type":"video/mp4"}], "tracks": [{"src": "{/videos/title.txt", "kind":"captions", "srclang": "en", "label": "English", "default": "true"}], "attributes": {"preload": false, "playsinline": true, "controls": true}}'
+                    data-poster="/images/milo-dragon-thumbnail.jpg" data-sub-html="<h4>Milo and the Dragon</h4>"
+                    class="item">
+                    <img src="images/milo-dragon-thumbnail.jpg" alt="" />
+                </a>
+                <a data-lg-size="1280-720"
+                    data-video='{"source": [{"src":"/images/The_PRNDL.mp4", "type":"video/mp4"}], "tracks": [{"src": "{/videos/title.txt", "kind":"captions", "srclang": "en", "label": "English", "default": "true"}], "attributes": {"preload": false, "playsinline": true, "controls": true}}'
+                    data-poster="/images/prndl-thumb.jpg" data-sub-html="<h4>The PRNDL</h4>" class="item">
+                    <img src="images/prndl-thumb.jpg" alt="" />
+                </a>
+                <a href="images/cowboy4-speed-2.gif" class="item">
+                    <img src="images/cowboy4-speed-2.gif" alt="" style="width: 250px;" />
+                </a>
+                <a href="images/animation-start-stop-test.gif" class="item">
+                    <img src="images/animation-start-stop-test.gif" alt="" />
+                </a>
+            </div>
+
+        </main>
+
+        <footer>
+            <div>&copy; Kenneth Lones, 2023</div>
+        </footer>
+
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js"></script>
+
+    <script type="text/javascript">
+        lightGallery(document.getElementById('myGallery'), {
+            plugins: [lgVideo],
+        });
+    </script> -->
+
+        <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js"></script>
+
+        <script type="text/javascript">
+            lightGallery(document.querySelector('.myGallery'), {
+                //plugins: [lgVideo],
+            });
+
+        </script>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commissions</title>
+    <link rel='stylesheet' type='text/css' href='css/main.css'>
+
+    <style>
+        .sideBySide {
+            width: 85%;
+            display: flex;
+            flex-direction: row;
+            margin: auto;
+        }
+
+        @media only screen and (max-width: 1000px) {
+            .sideBySide {
+                flex-direction: column;
+            }
+        }
+
+
+        ul {
+            width: 50%;
+            margin: auto;
+            text-align: left;
+        }
+
+        table {
+            border-style: solid;
+            border-color: rgba(184, 145, 122, 1.00);
+            border-width: 12px;
+            border-radius: 20px;
+            background-color: rgba(184, 145, 122, 1.00);
+            margin: auto;
+
+        }
+
+        .tableColumn {
+            width: 100px;
+        }
+
+        tr:nth-child(even) {
+            background-color: antiquewhite;
+            ;
+        }
+
+        tr {
+            border-radius: 10px;
+            height: 50px;
+        }
+
+        th,
+        td {
+            padding: 10px;
+        }
+
+        .leftCell {
+            border-radius: 10px 0 0 10px;
+        }
+
+        .rightCell,
+        #rightHeader {
+            border-radius: 0 10px 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="centerWrapper">
+        <header>KENNETH LONES</header>
+
+        <nav class="mainNav">
+            <a href="index.html">HOME</a>
+            <!-- <a href="epic-of-milo.html">EPIC OF MILO</a> -->
+            <a href="portfolio-best-work.html">PORTFOLIO</a>
+            <a href="books.html">SHOP</a>
+        </nav>
+        <main>
+
+            <h1>Shop</h1>
+
+            <nav>
+                <a href="books.html">Books</a>
+                <!-- <a href="stickers.html">Stickers</a> -->
+                <a href="commissions.html" style="color: rgb(189, 0, 32);">Commissions</a>
+            </nav>
+
+
+
+            <p>Like my <a href="portfolio-illustration.html">art?</a><br>Why not order a piece of your very own!</p>
+
+            <div class="sideBySide">
+                <div style="width: 50%;">
+                    <img src="images/will-do.png">
+                    <p><strong>I can draw all kinds of things!<br>(People, Animals, OCs, Existing Characters,
+                            etc!)</strong>
+                    </p>
+                </div>
+                <div style="width: 50%;">
+                    <img src="images/wont-do.png">
+                    <p><strong>Here's the big things I <i>won't</i> do:<br>NSFW, Gore, Realism, Tarot Cards.</strong>
+                    </p>
+                </div>
+            </div>
+
+            <h2>Here's my offerings and their respective prices!<br>I accept Cashapp and Venmo.</h2>
+
+            <table>
+                <tr>
+                    <th class="leftCell"></th>
+                    <th class="tableColumn">Sketch</th>
+                    <th class="tableColumn">Lineart</th>
+                    <th class="tableColumn">Color</th>
+                    <th class="tableColumn" id="rightHeader">Flat Shading</th>
+                </tr>
+                <tr>
+                    <th class="leftCell">Character Headshot/Bust</th>
+                    <td>$15</td>
+                    <td>$20</td>
+                    <td>$25</td>
+                    <td class="rightCell">$35</td>
+                </tr>
+                <tr>
+                    <th class="leftCell">Character Portrait (Half-Size)</th>
+                    <td>$25</td>
+                    <td>$35</td>
+                    <td>$40</td>
+                    <td class="rightCell">$50</td>
+                </tr>
+                <tr>
+                    <th class="leftCell">Full Size Character</th>
+                    <td>$35</td>
+                    <td>$45</td>
+                    <td>$50</td>
+                    <td class="rightCell">$60</td>
+                </tr>
+            </table>
+
+            <h2>Extras:</h2>
+            <ul>
+                <li><strong>Lineless Art: +$10</strong> for each character.</li><br>
+                <li><strong>Additional Character: +60% of character pricing</strong> as listed in the table above.</li>
+                <br>
+                <li><strong>Backgrounds: $10-50.</strong> This all depends on complexity. $10 will get you a simple
+                    backdrop,whereas $50 will cover a complex scene which
+                    the character is integrated into and may have a complicated perspective.</li><br>
+                <li><strong>Character Design: +$30</strong> for each character.</li>
+            </ul>
+
+            <h2>Notes:</h2>
+            <ul>
+                <li>Simple characters are drawn at a discount: a full simple character goes for the same price as a
+                    regular
+                    half-size character!</li><br>
+                <li>If you're not sure whether I can draw your thing, feel free to ask me over on Discord!</li><br>
+                <li>Please provide reference images with your description! This is necessary even if you're
+                    commissioning me
+                    to design a character for you.</li><br>
+            </ul>
+
+            <!-- <a href="order_form.html">
+            <h1>Order Here!</h1>
+        </a> -->
+
+        </main>
+        <footer>
+            <div>&copy; Kenneth Lones, 2023</div>
+        </footer>
+    </div>
+</body>
+
+</html>
