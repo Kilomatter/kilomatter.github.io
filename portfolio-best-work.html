@@ -5,9 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery.min.css">
+
     <link rel='stylesheet' type='text/css' href='css/main.css'>
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:500,600,800,900">
+
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery-bundle.min.css"
+        integrity="sha512-nUqPe0+ak577sKSMThGcKJauRI7ENhKC2FQAOOmdyCYSrUh0GnwLsZNYqwilpMmplN+3nO3zso8CWUgu33BDag=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-video.min.css" />
+
+
     <style>
         .myGallery {
             display: flex;
@@ -111,8 +123,13 @@
                 <a href="images/solaire.jpg" class="item">
                     <img src="images/solaire.jpg" alt="" />
                 </a>
-                <a data-lg-size="1280-720"
+                <!-- <a data-lg-size="1280-720"
                     data-video='{"source": [{"src":"/images/milo-and-the-dragon_1.mp4", "type":"video/mp4"}], "tracks": [{"src": "{/videos/title.txt", "kind":"captions", "srclang": "en", "label": "English", "default": "true"}], "attributes": {"preload": false, "playsinline": true, "controls": true}}'
+                    data-poster="/images/milo-dragon-thumbnail.jpg" data-sub-html="<h4>Milo and the Dragon</h4>"
+                    class="item" style="width:50%">
+                    <img src="images/milo-dragon-thumbnail.jpg" alt="" />
+                </a> -->
+                <a data-lg-size="1280-720" data-src="//youtu.be/hPgHAa20H_w?feature=shared"
                     data-poster="/images/milo-dragon-thumbnail.jpg" data-sub-html="<h4>Milo and the Dragon</h4>"
                     class="item" style="width:50%">
                     <img src="images/milo-dragon-thumbnail.jpg" alt="" />
@@ -122,6 +139,13 @@
                     data-poster="/images/prndl-thumb.jpg" data-sub-html="<h4>The PRNDL</h4>" class="item"
                     style="width:50%">
                     <img src="images/prndl-thumb.jpg" alt="" />
+                </a>
+
+                <a href="images/fantasy-pattern-demo.png" class="item" style="width: 50%;">
+                    <img src="images/fantasy-pattern-demo.png" alt="">
+                </a>
+                <a href="images/mural-pattern-demo.png" class="item" style="width: 50%;">
+                    <img src="images/mural-pattern-demo.png" alt="">
                 </a>
                 <a href="images/sunflowers.jpg" class="item">
                     <img src="images/sunflowers.jpg" alt="" />
@@ -160,9 +184,23 @@
         </footer>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/video/lg-video.min.js"></script>
 
         <script>
-            lightGallery(document.querySelector('.myGallery'));
+            lightGallery(document.querySelector('.myGallery'), {
+                plugins: [lgVideo],
+                licenseKey: '0000-0000-000-0000',
+                controls: true,
+                counter: true,
+                download: false
+            });
+            /* let gallery = document.getElementById('myGallery')
+            lightGallery(gallery, {
+                plugins: [lgVideo, lgZoom],
+                controls: true,
+                counter: true,
+                download: false,
+            }); */
         </script>
     </div>
 </body>
