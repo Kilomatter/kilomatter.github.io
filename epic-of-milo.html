@@ -12,6 +12,7 @@
     <style>
         a {
             text-decoration: none;
+            transition: 0.2s;
         }
 
         body {
@@ -43,9 +44,11 @@
             border-radius: 20px;
             display: flex;
             flex-direction: column;
+            width: 60%;
+            margin: auto;
         }
 
-        .sideBar a {
+        /* .sideBar a {
             margin-left: 20px;
             margin-right: 20px;
             padding: 20px;
@@ -54,13 +57,46 @@
             ;
             height: 40px;
             line-height: 0;
-        }
+        } */
 
         .mainBar {
             padding: 30px;
             background-color: rgb(184, 122, 164);
             border-radius: 20px;
         }
+
+        .chapterList{
+            flex-direction: row;
+            margin: auto;
+            justify-content: center;
+            
+        }
+
+        .chapter{
+            flex-direction: column;
+            width: 25%;
+            margin: 10px;
+            box-shadow: 0px 0px;
+            
+        }
+
+        .chapter img{
+            width:100%;
+            border-radius: 10px;
+            box-shadow: 10px;
+            transition: 0.2s;
+        }
+
+        .chapter:hover img{
+            box-shadow: 0px 10px;
+            
+        }
+
+        .chapter a{
+            text-align: center;
+            font-size: 20px;
+        }
+        
 
         /* .mainNav,
         .mainBar,
@@ -90,23 +126,47 @@
 
 <body>
     <!-- <header> EPIC OF MILO </header> -->
-    <img src="images/banner.jpg" style="width: 100%;">
+    <img src="images/banner.jpg">
 
-    <nav class="mainNav">
+    <!-- <nav class="mainNav">
         <a href="epic-of-milo.html">HOME</a>
         <a href="milo-pages.html">CHAPTERS</a>
         <a href="milo-chars.html">CHARACTERS</a>
-    </nav>
+    </nav> -->
 
     <main>
         <div class="sideBar">
-            <p>On a quest to save up gold to buy a dog, Milo learns all about heroics from his significantly less than
-                heroic mentor, Nico.</p>
+            <h2>On a quest to save up gold to buy a dog, Milo learns all about heroics from his significantly less than
+                heroic mentor, Nico.</h2>
 
-            <div style="display: flex; flex-direction: row; width: 100%; justify-content: center;">
+            <h1 style="margin-bottom: 100px;"><a href="milo-ch1.html">START READING HERE!</a></h1>
+
+            <h2>Or pick up from one of the chapters below:</h2>
+
+            <div class="chapterList">
+                <div class="chapter">
+                    <img src="images/milo-ch1-thumb.png">
+                    <a href="milo-ch1.html">Chapter 1: <br>Entwined Quests</a>
+                    <p>Current Chapter!</p>
+                </div>
+                <div class="chapter">
+                    <img src="images/placeholder-lmao.webp">
+                    <a href="milo-ch2.html">Chapter 2: <br>Nothing to Hide</a>
+                </div>
+                <div class="chapter">
+                    <img src="images/placeholder-lmao-2.webp">
+                    <a href="milo-ch3.html">Chapter 3: <br>Noble Steed</a>
+                </div>
+            </div>
+            
+
+
+            <!-- <div style="display: flex; flex-direction: row; width: 100%; justify-content: center;">
                 <a href="milo-ch1.html">Start from the beginning!</a>
                 <a href="milo-chars.html">Meet the main characters!</a>
-            </div>
+            </div> -->
+            
+            
 
         </div>
     </main>
