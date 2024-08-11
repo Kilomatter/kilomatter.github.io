@@ -13,5 +13,10 @@ IMPORTANT:
 POLISH:
 
 - Change mouse icons for hovering over and grabbing scrollbar
-- Try filtering the Milo pages to look nicer in Photoshop (think like Taichan YTPMV visuals)
+✓ Try filtering the Milo pages to look nicer in Photoshop (think like Taichan YTPMV visuals)
 -spam transition css everywhere cause i know how to use it now
+
+Portfolio Site Features
+
+IMPORTANT
+-Make first page mobile friendly
