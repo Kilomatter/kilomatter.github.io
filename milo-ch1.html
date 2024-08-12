@@ -16,8 +16,7 @@
         }
 
         .swiper {
-            width: 78%;
-            height: 100%;
+            height: 100vh;
             background-color: rgb(206, 155, 183);
             margin-left: auto;
             margin-right: auto;
@@ -39,7 +38,16 @@
         }
 
         img {
-            width: 100%;
+            height: 100%;
+        }
+
+        @media screen and (max-width: 1200px){
+            .swiper {
+                width: 100vw;
+                height: 100%;
+                border-width: 5px;
+                border-radius: 10px;
+            }
         }
     </style>
 </head>
@@ -47,13 +55,13 @@
 <body>
 
     <header>EPIC of MILO</header>
-    <nav class="mainNav">
+    <!-- <nav class="mainNav">
         <a href="epic-of-milo.html">HOME</a>
         <a href="milo-pages.html">CHAPTERS</a>
         <a href="milo-chars.html">CHARACTERS</a>
-    </nav>
+    </nav> -->
 
-    <main>
+    <!-- <main> -->
 
         <div class="swiper">
             <div class="swiper-wrapper">
@@ -116,7 +124,7 @@
 
         </div>
 
-    </main>
+   <!--  </main> -->
 
     <footer>
         <div>&copy; Kenneth Lones, 2023</div>
