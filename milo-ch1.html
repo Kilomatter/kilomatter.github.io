@@ -15,8 +15,10 @@
             font-family: Pangolin, sans-serif;
         }
 
-        .swiper {
-            height: 100vh;
+        .horizontalSwiper {
+            max-width: 100wh;
+            max-height: 100vh;
+            aspect-ratio: 1.4 / 1;
             background-color: rgb(206, 155, 183);
             margin-left: auto;
             margin-right: auto;
@@ -24,6 +26,21 @@
             border-width: 10px;
             border-color: rgba(104, 86, 76, 1.00);
             border-radius: 30px;
+            overflow: hidden;
+        }
+
+        .verticalSwiper {
+            max-width: 100wh;
+            max-height: 100vh;
+            aspect-ratio: 0.7 / 1;
+            background-color: rgb(206, 155, 183);
+            margin-left: auto;
+            margin-right: auto;
+            border-style: solid;
+            border-width: 10px;
+            border-color: rgba(104, 86, 76, 1.00);
+            border-radius: 30px;
+            overflow: hidden;
         }
 
         .swiper-button-next,
@@ -41,14 +58,30 @@
             height: 100%;
         }
 
-        @media screen and (max-width: 1200px){
-            .swiper {
-                width: 100vw;
-                height: 100%;
-                border-width: 5px;
-                border-radius: 10px;
+        @media all and (orientation: landscape){
+            .horizontalSwiper{
+                visibility: visible;
+            }
+
+            .verticalSwiper{
+                visibility: hidden;
+                width: 0;
+                height: 0;
             }
         }
+
+        @media all and (orientation: portrait){
+            .horizontalSwiper{
+                visibility: hidden;
+                width: 0;
+                height: 0;
+            }
+
+            .verticalSwiper{
+                visibility: visible;
+            }
+        }
+
     </style>
 </head>
 
@@ -63,7 +96,7 @@
 
     <!-- <main> -->
 
-        <div class="swiper">
+        <div class="horizontalSwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <h3>Chapter 1: Entwined Quests</h3>
@@ -96,30 +129,53 @@
                 <div class="swiper-slide">
                     <img src="pages/entwined-quests_011.png">
                 </div>
-                <!-- <div class="swiper-slide">
-                    <img src="pages/pie_009.png">
-                </div>
-                <div class="swiper-slide">
-                    <img src="pages/pie_010.png">
-                </div>
-                <div class="swiper-slide">
-                    <img src="pages/pie_011.png">
-                </div>
-                <div class="swiper-slide">
-                    <img src="pages/pie_012.png">
-                </div>
-                <div class="swiper-slide">
-                    <img src="pages/pie_013.png">
-                </div> -->
                 <div class="swiper-slide">
                     <h3>More pages coming soon!</h3>
                 </div>
             </div>
 
-            <!-- <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div> -->
+            <div class="swiper-scrollbar"></div>
 
-            <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="verticalSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <h3>Chapter 1: Entwined Quests</h3>
+                    <img src="pages/entwined-quests_cover.png" style="width: 75%;">
+                </div>
+                <div class="swiper-slide">
+                    <img src="pages/entwined-quests_003.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="pages/entwined-quests_004.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="pages/entwined-quests_005.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="pages/entwined-quests_006.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="pages/entwined-quests_007.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="pages/entwined-quests_008.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="pages/entwined-quests_009.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="pages/entwined-quests_010.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="pages/entwined-quests_011.png">
+                </div>
+                <div class="swiper-slide">
+                    <h3>More pages coming soon!</h3>
+                </div>
+            </div>
+
             <div class="swiper-scrollbar"></div>
 
         </div>
@@ -132,7 +188,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-        const swiper = new Swiper('.swiper', {
+        var swiper = new Swiper('.horizontalSwiper', {
             // Optional parameters
             direction: 'horizontal',
             loop: false,
@@ -163,7 +219,37 @@
                 enabled: true,
             }
         });
-    </script>
+
+    var mobileSwiper = new Swiper('.verticalSwiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: false,
+        spaceBetween: 0,
+        speed: 500,
+
+        // If we need pagination
+        /* pagination: {
+            el: '.swiper-pagination',
+            type: fractions,
+        }, */
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+            draggable: true,
+        },
+
+        keyboard: {
+            enabled: false,
+        }
+    });
+</script>
 </body>
 
 </html>

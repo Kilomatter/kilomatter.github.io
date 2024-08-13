@@ -1,22 +1,24 @@
 Milo Site Features
 
 IMPORTANT:
-- Make Reader Mobile Friendly (media query + single page view)
+/ Make Reader Mobile Friendly (fix scaling, add single page view option)
+- Actual print type pages for Chapter title and Coming Soon
+-Add Discord Link
 
   Condense Navigation: 
-    ✓ Move chapter page to home
-    ✓ Turn Chapters from a list into Thumbnail Grid
-    - 
+    - Characters as list instead of wiki pages
 
 ✓ Updated Page 1-1 
 
+LESS IMPORTANT:
+-Concept art gallery
+-Seamless doodle texture
+- Gradients for shadow in between pages (css)
+
 POLISH:
-
-- Gradients in between pages (css)
-- Change mouse icons for hovering over and grabbing scrollbar
-✓ Try filtering the Milo pages to look nicer in Photoshop (think like Taichan YTPMV visuals)
 -spam transition css everywhere cause i know how to use it now
-
+- Change mouse icons for hovering over and grabbing scrollbar
+-
 
 Portfolio Site Features
 
