@@ -1,14 +1,11 @@
 Milo Site Features
 
 IMPORTANT:
-/ Make Reader Mobile Friendly (fix scaling, add single page view option)
 - Actual print type pages for Chapter title and Coming Soon
 -Add Discord Link
 
   Condense Navigation: 
     - Characters as list instead of wiki pages
-
-✓ Updated Page 1-1 
 
 LESS IMPORTANT:
 -Concept art gallery

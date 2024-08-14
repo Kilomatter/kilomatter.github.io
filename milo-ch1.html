@@ -16,7 +16,7 @@
         }
 
         .horizontalSwiper {
-            max-width: 100wh;
+            max-width: 100vw;
             max-height: 100vh;
             aspect-ratio: 1.4 / 1;
             background-color: rgb(206, 155, 183);
@@ -30,7 +30,7 @@
         }
 
         .verticalSwiper {
-            max-width: 100wh;
+            max-width: 100vw;
             max-height: 100vh;
             aspect-ratio: 0.7 / 1;
             background-color: rgb(206, 155, 183);
@@ -54,8 +54,29 @@
             --swiper-scrollbar-drag-bg-color: rgba(98, 57, 141, 0.5);
         }
 
-        img {
+        .swiper-slide{
+            position: relative;
+        }
+
+        img, .gradientRight, .gradientLeft{
             height: 100%;
+        }
+
+        .gradientRight, .gradientLeft{
+            position: absolute;
+            top: 0;
+            width: 10%;
+            background-color: black;
+            z-index: 100;
+            
+        }
+
+        .gradientLeft{
+            left: 0;
+        }
+
+        .gradientRight{
+            right: 0;
         }
 
         @media all and (orientation: landscape){
@@ -87,7 +108,7 @@
 
 <body>
 
-    <header>EPIC of MILO</header>
+    <header> <a href="epic-of-milo.html">EPIC of MILO</a></header>
     <!-- <nav class="mainNav">
         <a href="epic-of-milo.html">HOME</a>
         <a href="milo-pages.html">CHAPTERS</a>
@@ -99,11 +120,12 @@
         <div class="horizontalSwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <h3>Chapter 1: Entwined Quests</h3>
-                    <img src="pages/entwined-quests_cover.png" style="width: 75%;">
+                    <img src="pages/entwined-quests-cover.png">
                 </div>
                 <div class="swiper-slide">
+                    <div class="leftGradient"></div>
                     <img src="pages/entwined-quests_003.png">
+                    
                 </div>
                 <div class="swiper-slide">
                     <img src="pages/entwined-quests_004.png">
@@ -146,6 +168,7 @@
                 </div>
                 <div class="swiper-slide">
                     <img src="pages/entwined-quests_003.png">
+                    
                 </div>
                 <div class="swiper-slide">
                     <img src="pages/entwined-quests_004.png">
