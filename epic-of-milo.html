@@ -22,7 +22,9 @@
             width: 70%;
             margin: auto;
             display: grid;
-            grid-template-columns: auto /* auto auto */;
+            grid-template-columns: auto
+                /* auto auto */
+            ;
             gap: 20px;
         }
 
@@ -65,49 +67,49 @@
             border-radius: 20px;
         }
 
-        .chapterList{
+        .chapterList {
             flex-direction: row;
             margin: auto;
             justify-content: center;
-            
+
         }
 
-        .chapter{
+        .chapter {
             flex-direction: column;
             max-width: 300px;
             margin: 10px;
-            border-radius: 10px; 
-            background-color: rgb(147, 97, 153); 
-            padding: 3%; 
+            border-radius: 10px;
+            background-color: rgb(147, 97, 153);
+            padding: 3%;
         }
 
-        .chapter img{
-            width:100%;
+        .chapter img {
+            width: 100%;
             border-radius: 10px;
-            filter:brightness(100%) contrast(100%);
-            
+            filter: brightness(100%) contrast(100%);
+
             transition: 0.2s;
         }
 
-        .chapter:hover img{
-            filter:brightness(120%) contrast(80%);
-            
+        .chapter:hover img {
+            filter: brightness(120%) contrast(80%);
+
         }
 
-        .chapter a{
+        .chapter a {
             text-align: center;
             font-size: 20px;
         }
 
-        .linkButton{
-            border-radius: 10px; 
-            background-color: rgb(147, 97, 153); 
-            padding: 1%; 
+        .linkButton {
+            border-radius: 10px;
+            background-color: rgb(147, 97, 153);
+            padding: 1%;
             margin: auto;
         }
 
-        @media screen and (max-width: 800px){
-            .chapterList{
+        @media screen and (max-width: 800px) {
+            .chapterList {
                 grid-template-columns: auto;
             }
 
@@ -115,16 +117,16 @@
                 max-width: 200px;
             }
 
-            body{
+            body {
                 font-size: 12px;
             }
 
-            main{
+            main {
                 padding-top: 5%;
             }
-            
+
         }
-            
+
 
         /* .mainNav,
         .mainBar,
@@ -190,22 +192,24 @@
             </div>
 
             <h2> <a href="https://discord.com/invite/7FkHtqEejT" class="linkButton">Join the Discord!</a> </h2>
-            
+
 
 
             <!-- <div style="display: flex; flex-direction: row; width: 100%; justify-content: center;">
                 <a href="milo-ch1.html">Start from the beginning!</a>
                 <a href="milo-chars.html">Meet the main characters!</a>
             </div> -->
-            
-            
+
+
 
         </div>
     </main>
 
     <footer>
         <div>
-            <a href="https://linktr.ee/kilomatter">&copy; Kenneth Lones, 2024</a>
+            <a href="https://linktr.ee/kilomatter">&copy; Kenneth Lones,
+                <script type="text/javascript">document.write(new Date().getFullYear());</script>
+            </a>
         </div>
     </footer>
 </body>

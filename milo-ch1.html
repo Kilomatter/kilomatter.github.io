@@ -54,55 +54,57 @@
             --swiper-scrollbar-drag-bg-color: rgba(98, 57, 141, 0.5);
         }
 
-        .swiper-slide{
+        .swiper-slide {
             position: relative;
         }
 
-        img, .gradientRight, .gradientLeft{
+        img,
+        .gradientRight,
+        .gradientLeft {
             height: 100%;
         }
 
-        .gradientRight, .gradientLeft{
+        .gradientRight,
+        .gradientLeft {
             position: absolute;
             top: 0;
             width: 10%;
             background-color: black;
             z-index: 100;
-            
+
         }
 
-        .gradientLeft{
+        .gradientLeft {
             left: 0;
         }
 
-        .gradientRight{
+        .gradientRight {
             right: 0;
         }
 
-        @media all and (orientation: landscape){
-            .horizontalSwiper{
+        @media all and (orientation: landscape) {
+            .horizontalSwiper {
                 visibility: visible;
             }
 
-            .verticalSwiper{
+            .verticalSwiper {
                 visibility: hidden;
                 width: 0;
                 height: 0;
             }
         }
 
-        @media all and (orientation: portrait){
-            .horizontalSwiper{
+        @media all and (orientation: portrait) {
+            .horizontalSwiper {
                 visibility: hidden;
                 width: 0;
                 height: 0;
             }
 
-            .verticalSwiper{
+            .verticalSwiper {
                 visibility: visible;
             }
         }
-
     </style>
 </head>
 
@@ -117,94 +119,96 @@
 
     <!-- <main> -->
 
-        <div class="horizontalSwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="pages/entwined-quests-cover.png">
-                </div>
-                <div class="swiper-slide">
-                    <div class="leftGradient"></div>
-                    <img src="pages/entwined-quests_003.png">
-                    
-                </div>
-                <div class="swiper-slide">
-                    <img src="pages/entwined-quests_004.png">
-                </div>
-                <div class="swiper-slide">
-                    <img src="pages/entwined-quests_005.png">
-                </div>
-                <div class="swiper-slide">
-                    <img src="pages/entwined-quests_006.png">
-                </div>
-                <div class="swiper-slide">
-                    <img src="pages/entwined-quests_007.png">
-                </div>
-                <div class="swiper-slide">
-                    <img src="pages/entwined-quests_008.png">
-                </div>
-                <div class="swiper-slide">
-                    <img src="pages/entwined-quests_009.png">
-                </div>
-                <div class="swiper-slide">
-                    <img src="pages/entwined-quests_010.png">
-                </div>
-                <div class="swiper-slide">
-                    <img src="pages/entwined-quests_011.png">
-                </div>
-                <div class="swiper-slide">
-                    <img src="pages/end-card.png">
-                </div>
+    <div class="horizontalSwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="pages/entwined-quests-cover.png">
             </div>
+            <div class="swiper-slide">
+                <div class="leftGradient"></div>
+                <img src="pages/entwined-quests_003.png">
 
-            <div class="swiper-scrollbar"></div>
-
+            </div>
+            <div class="swiper-slide">
+                <img src="pages/entwined-quests_004.png">
+            </div>
+            <div class="swiper-slide">
+                <img src="pages/entwined-quests_005.png">
+            </div>
+            <div class="swiper-slide">
+                <img src="pages/entwined-quests_006.png">
+            </div>
+            <div class="swiper-slide">
+                <img src="pages/entwined-quests_007.png">
+            </div>
+            <div class="swiper-slide">
+                <img src="pages/entwined-quests_008.png">
+            </div>
+            <div class="swiper-slide">
+                <img src="pages/entwined-quests_009.png">
+            </div>
+            <div class="swiper-slide">
+                <img src="pages/entwined-quests_010.png">
+            </div>
+            <div class="swiper-slide">
+                <img src="pages/entwined-quests_011.png">
+            </div>
+            <div class="swiper-slide">
+                <img src="pages/end-card.png">
+            </div>
         </div>
 
-        <div class="verticalSwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="pages/entwined-quests-cover.png">
-                </div>
-                <div class="swiper-slide">
-                    <img src="pages/entwined-quests_003.png">
-                </div>
-                <div class="swiper-slide">
-                    <img src="pages/entwined-quests_004.png">
-                </div>
-                <div class="swiper-slide">
-                    <img src="pages/entwined-quests_005.png">
-                </div>
-                <div class="swiper-slide">
-                    <img src="pages/entwined-quests_006.png">
-                </div>
-                <div class="swiper-slide">
-                    <img src="pages/entwined-quests_007.png">
-                </div>
-                <div class="swiper-slide">
-                    <img src="pages/entwined-quests_008.png">
-                </div>
-                <div class="swiper-slide">
-                    <img src="pages/entwined-quests_009.png">
-                </div>
-                <div class="swiper-slide">
-                    <img src="pages/entwined-quests_010.png">
-                </div>
-                <div class="swiper-slide">
-                    <img src="pages/entwined-quests_011.png">
-                </div>
-                <div class="swiper-slide">
-                    <img src="pages/end-card.png">
-                </div>
+        <div class="swiper-scrollbar"></div>
+
+    </div>
+
+    <div class="verticalSwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="pages/entwined-quests-cover.png">
             </div>
-
-            <div class="swiper-scrollbar"></div>
-
+            <div class="swiper-slide">
+                <img src="pages/entwined-quests_003.png">
+            </div>
+            <div class="swiper-slide">
+                <img src="pages/entwined-quests_004.png">
+            </div>
+            <div class="swiper-slide">
+                <img src="pages/entwined-quests_005.png">
+            </div>
+            <div class="swiper-slide">
+                <img src="pages/entwined-quests_006.png">
+            </div>
+            <div class="swiper-slide">
+                <img src="pages/entwined-quests_007.png">
+            </div>
+            <div class="swiper-slide">
+                <img src="pages/entwined-quests_008.png">
+            </div>
+            <div class="swiper-slide">
+                <img src="pages/entwined-quests_009.png">
+            </div>
+            <div class="swiper-slide">
+                <img src="pages/entwined-quests_010.png">
+            </div>
+            <div class="swiper-slide">
+                <img src="pages/entwined-quests_011.png">
+            </div>
+            <div class="swiper-slide">
+                <img src="pages/end-card.png">
+            </div>
         </div>
 
-   <!--  </main> -->
+        <div class="swiper-scrollbar"></div>
+
+    </div>
+
+    <!--  </main> -->
 
     <footer>
-        <div>&copy; Kenneth Lones, 2023</div>
+        <div>&copy; Kenneth Lones,
+            <script type="text/javascript">document.write(new Date().getFullYear());</script>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -241,36 +245,36 @@
             }
         });
 
-    var mobileSwiper = new Swiper('.verticalSwiper', {
-        // Optional parameters
-        direction: 'horizontal',
-        loop: false,
-        spaceBetween: 0,
-        speed: 500,
+        var mobileSwiper = new Swiper('.verticalSwiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: false,
+            spaceBetween: 0,
+            speed: 500,
 
-        // If we need pagination
-        /* pagination: {
-            el: '.swiper-pagination',
-            type: fractions,
-        }, */
+            // If we need pagination
+            /* pagination: {
+                el: '.swiper-pagination',
+                type: fractions,
+            }, */
 
-        // Navigation arrows
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
 
-        // And if we need scrollbar
-        scrollbar: {
-            el: '.swiper-scrollbar',
-            draggable: true,
-        },
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+                draggable: true,
+            },
 
-        keyboard: {
-            enabled: false,
-        }
-    });
-</script>
+            keyboard: {
+                enabled: false,
+            }
+        });
+    </script>
 </body>
 
 </html>
