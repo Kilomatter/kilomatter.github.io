@@ -13,11 +13,11 @@
     <style>
         body {
             font-family: Pangolin, sans-serif;
+            max-height: 100vh;
         }
 
         .horizontalSwiper {
-            max-width: 100vw;
-            max-height: 100vh;
+            max-height: 85vh;
             aspect-ratio: 1.4 / 1;
             background-color: rgb(206, 155, 183);
             margin-left: auto;
@@ -30,8 +30,7 @@
         }
 
         .verticalSwiper {
-            max-width: 100vw;
-            max-height: 100vh;
+            width: 100vw;
             aspect-ratio: 0.7 / 1;
             background-color: rgb(206, 155, 183);
             margin-left: auto;
@@ -67,19 +66,20 @@
         .gradientRight,
         .gradientLeft {
             position: absolute;
-            top: 0;
-            width: 10%;
-            background-color: black;
+            width: 5%;
+            mix-blend-mode: multiply;
             z-index: 100;
 
         }
 
         .gradientLeft {
             left: 0;
+            background-image: linear-gradient(to right, rgb(119, 119, 119), rgba(0.5,0.5,0.5,0));
         }
 
         .gradientRight {
             right: 0;
+            background-image: linear-gradient(to left, rgba(119,119,119,1), rgba(0.5,0.5,0.5,0));
         }
 
         @media all and (orientation: landscape) {
@@ -119,15 +119,72 @@
 
     <!-- <main> -->
 
+<<<<<<< Updated upstream
     <div class="horizontalSwiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <img src="pages/entwined-quests-cover.png">
+=======
+        <div class="horizontalSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <!-- <div class="gradientRight"></div> -->
+                    <img src="pages/entwined-quests-cover.png">
+                </div>
+                <div class="swiper-slide">
+                    <!-- <div class="gradientLeft"></div> -->
+                    <img src="pages/entwined-quests_003.png">
+                </div>
+                <div class="swiper-slide">
+                    <!-- <div class="gradientRight"></div> -->
+                    <img src="pages/entwined-quests_004.png">
+                </div>
+                <div class="swiper-slide">
+                    <!-- <div class="gradientLeft"></div> -->
+                    <img src="pages/entwined-quests_005.png">
+                </div>
+                <div class="swiper-slide">
+                    <!-- <div class="gradientRight"></div> -->
+                    <img src="pages/entwined-quests_006.png">
+                </div>
+                <div class="swiper-slide">
+                    <!-- <div class="gradientLeft"></div> -->
+                    <img src="pages/entwined-quests_007.png">
+                </div>
+                <div class="swiper-slide">
+                    <!-- <div class="gradientRight"></div> -->
+                    <img src="pages/entwined-quests_008.png">
+                </div>
+                <div class="swiper-slide">
+                    <!-- <div class="gradientLeft"></div> -->
+                    <img src="pages/entwined-quests_009.png">
+                </div>
+                <div class="swiper-slide">
+                    <!-- <div class="gradientRight"></div> -->
+                    <img src="pages/entwined-quests_010.png">
+                </div>
+                <div class="swiper-slide">
+                    <!-- <div class="gradientLeft"></div> -->
+                    <img src="pages/entwined-quests_011.png">
+                </div>
+                <div class="swiper-slide">
+                    <!-- <div class="gradientRight"></div> -->
+                    <img src="pages/entwined-quests_012.png">
+                </div>
+                <div class="swiper-slide">
+                    <!-- <div class="gradientLeft"></div> -->
+                    <img src="pages/entwined-quests_013.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="pages/end-card.png">
+                </div>
+>>>>>>> Stashed changes
             </div>
             <div class="swiper-slide">
                 <div class="leftGradient"></div>
                 <img src="pages/entwined-quests_003.png">
 
+<<<<<<< Updated upstream
             </div>
             <div class="swiper-slide">
                 <img src="pages/entwined-quests_004.png">
@@ -210,6 +267,64 @@
             <a href="https://linktr.ee/kilomatter">&copy; Kenneth Lones,
                 <script type="text/javascript">document.write(new Date().getFullYear());</script>
             </a>
+=======
+            <div class="swiper-pagination"></div>
+
+        </div>
+
+        <div class="verticalSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="pages/entwined-quests-cover.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="pages/entwined-quests_003.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="pages/entwined-quests_004.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="pages/entwined-quests_005.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="pages/entwined-quests_006.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="pages/entwined-quests_007.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="pages/entwined-quests_008.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="pages/entwined-quests_009.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="pages/entwined-quests_010.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="pages/entwined-quests_011.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="pages/entwined-quests_012.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="pages/entwined-quests_013.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="pages/end-card.png">
+                </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+        </div>
+
+   <!-- </main> -->
+
+   <footer>
+        <div>
+            <a href="https://linktr.ee/kilomatter">&copy; Kenneth Lones, 2024</a>
+>>>>>>> Stashed changes
         </div>
     </footer>
 
@@ -225,10 +340,10 @@
             speed: 500,
 
             // If we need pagination
-            /* pagination: {
+            pagination: {
                 el: '.swiper-pagination',
-                type: fractions,
-            }, */
+                type: 'progressbar',
+            },
 
             // Navigation arrows
             navigation: {
@@ -254,11 +369,19 @@
             spaceBetween: 0,
             speed: 500,
 
+<<<<<<< Updated upstream
             // If we need pagination
             /* pagination: {
                 el: '.swiper-pagination',
                 type: fractions,
             }, */
+=======
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'progressbar',
+        },
+>>>>>>> Stashed changes
 
             // Navigation arrows
             navigation: {
