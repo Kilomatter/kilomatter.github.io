@@ -40,6 +40,11 @@
             height: 100%;
         }
 
+        .subnav{
+            position: sticky;
+            top:0;
+        }
+
         img {
             border-radius: 20px;
             padding: 5px;
@@ -51,7 +56,7 @@
         }
 
         h2 {
-            margin-top: 100px;
+            padding-top: 100px;
         }
     </style>
 
@@ -69,6 +74,15 @@
             <a href="./portfolio">PORTFOLIO</a>
             <a href="./commissions">SHOP</a>
         </nav>
+
+        <!-- <nav class="subnav">
+            <a href="#gd-head">Graphic Design</a>
+            <a href="#illus-head">Illustration</a>
+            <a href="#diag-head">Technical Diagrams</a>
+            <a href="#model-head">3D Modeling</a>
+            <a href="#char-head">Character Design</a>
+            <a href="#anim-head">Animation</a>
+        </nav> -->
 
         <main>
 
@@ -113,7 +127,55 @@
             </div>
         </div> -->
 
-            <h2>Illustration</h2>
+            <h2 id="gd-head">Graphic Design</h2>
+            
+            <div class="myGallery" id="graphics">
+                <a href="images/LMM.jpg" class="item" style="width: 100%;">
+                    <img src="images/LMM.jpg" alt="" />
+                </a>
+                <a href="images/flyer-bbq.jpg" class="item" style="width: 50%;">
+                    <img src="images/flyer-bbq.jpg">
+                </a>
+                <a href="images/art-flyer.png" class="item" style="width: 25%">
+                    <img src="images/art-flyer.png">
+                </a>
+                <a href="images/DVTC LOGO NEW.png" class="item">
+                    <img src="images/DVTC LOGO NEW.png">
+                </a>
+                <a href="images/flyers.png" class="item">
+                    <img src="images/flyers.png" alt="" />
+                </a>
+                <a href="images/lion-front-view.png" class="item">
+                    <img src="images/lion-front-view.png" alt="" />
+                </a>
+                
+            </div>
+
+            <h2 id="book-head">Books</h2>
+            <p>I fully illustrated both of these books. They are available for purchase on Amazon!</p>
+            
+            <div class="myGallery" id="graphics">
+                <a href="images/LMM.jpg" class="item" style="width: 100%;">
+                    <img src="images/LMM.jpg" alt="" />
+                </a>
+                <a href="images/flyer-bbq.jpg" class="item" style="width: 50%;">
+                    <img src="images/flyer-bbq.jpg">
+                </a>
+                <a href="images/art-flyer.png" class="item" style="width: 25%">
+                    <img src="images/art-flyer.png">
+                </a>
+                <a href="images/DVTC LOGO NEW.png" class="item">
+                    <img src="images/DVTC LOGO NEW.png">
+                </a>
+                <a href="images/flyers.png" class="item">
+                    <img src="images/flyers.png" alt="" />
+                </a>
+                <a href="images/lion-front-view.png" class="item">
+                    <img src="images/lion-front-view.png" alt="" />
+                </a>
+            </div>
+
+            <h2 id="illus-head">Illustration</h2>
 
             <div class="myGallery" id="illustrations">
 
@@ -206,7 +268,7 @@
                 </a>
             </div>
 
-            <h2>Technical Illustrations and Diagrams</h2>
+            <h2 id="diag-head">Technical Illustrations and Diagrams</h2>
             <div class="myGallery" id="diagrams">
                 <a href="images/meter.jpg" class="item" style="width: 66%;">
                     <img src="images/meter.jpg" alt="" />
@@ -231,7 +293,7 @@
                 </a>
             </div>
 
-            <h2>Modeling</h2>
+            <h2 id="model-head">3D Modeling</h2>
             <div class="myGallery" id="modeling">
                 <a href="images/f18p.png" class="item" style="width: 50%;">
                     <img src="images/f18p.png" alt="" />
@@ -263,7 +325,7 @@
                 </a>
             </div>
 
-            <h2>Character Design</h2>
+            <h2 id="char-head">Character Design</h2>
             <div class="myGallery" id="characters">
                 <a href="images/banner.jpg" class="item" style="width: 100%;">
                     <img src="images/banner.jpg" alt="" />
@@ -318,7 +380,7 @@
                 </a>
             </div>
  -->
-            <h2>Animations</h2>
+            <h2 id="anim-head" >Animations</h2>
 
             <div class="myGallery" id="animations">
                 <a href="images/real-life-doodle_2.gif" class="item" style="width:40%;">
@@ -387,15 +449,25 @@
             });
         </script>
 
-<script>
-    lightGallery(document.querySelector('#diagrams'), {
-        //plugins: [lgVideo],
-        licenseKey: '0000-0000-000-0000',
-        controls: true,
-        counter: true,
-        download: false
-    });
-</script>
+        <script>
+            lightGallery(document.querySelector('#graphics'), {
+                //plugins: [lgVideo],
+                licenseKey: '0000-0000-000-0000',
+                controls: true,
+                counter: true,
+                download: false
+            });
+        </script>
+
+        <script>
+            lightGallery(document.querySelector('#diagrams'), {
+                //plugins: [lgVideo],
+                licenseKey: '0000-0000-000-0000',
+                controls: true,
+                counter: true,
+                download: false
+            });
+        </script>
 
         <script>
             lightGallery(document.querySelector('#modeling'), {
